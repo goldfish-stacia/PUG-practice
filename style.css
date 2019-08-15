@@ -1,9 +1,12 @@
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: #58451A;
     font-family: 微軟正黑體;
+    text-align: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
 }
 body {
     background-color:  #FAF7F0;
@@ -39,28 +42,32 @@ nav {
     margin: 0 auto;
     padding: 50px 0;
 }
-/* brands區塊 */
+/* brands 區塊 */
 #brands {
-    /* margin: 0 auto; */
     text-align: center;
-    /* width: 500px; */
 }
-.title {
+/* 標題區塊 樣式 */
+.title-box {
+    text-align: center;
+}
+.title-box h1 {
+    font-size: 32px;
+    letter-spacing: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.title-box h2 {
     font-size: 18px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .title::before {
     content: "＼";
-    padding-right: 20px;
+    padding: 0 20px;
 }
 .title::after {
     content: "／";
-    padding-left: 20px;
-}
-#brands h2 {
-    font-size: 36px;
-    letter-spacing: 10px;
-    padding: 10px;
+    padding: 0 20px;
 }
 #brands p {
     margin: 0 auto;
@@ -70,3 +77,4 @@ nav {
     padding: 50px;
     opacity: 0.6;
 }
+/* cakes 產品區塊 */
