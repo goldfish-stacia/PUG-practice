@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: #58451A;
+    font-family: 微軟正黑體;
+}
+body {
+    background-color:  #FAF7F0;
 }
 #banner {
     background-image: url(imgs/Banner.jpg);
     background-size: 100vw;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
+    height: calc(100vw/2.1);
 }
 #logo {
     width: 300px;
@@ -28,8 +33,40 @@
     color: #000000;
     transition: 0.6s;
 }
+/* 導覽獵區塊 */
 nav {
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
+}
+/* brands區塊 */
+#brands {
+    /* margin: 0 auto; */
+    text-align: center;
+    /* width: 500px; */
+}
+.title {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.title::before {
+    content: "＼";
+    padding-right: 20px;
+}
+.title::after {
+    content: "／";
+    padding-left: 20px;
+}
+#brands h2 {
+    font-size: 36px;
+    letter-spacing: 10px;
+    padding: 10px;
+}
+#brands p {
+    margin: 0 auto;
+    line-height: 2;
+    width: 520px;
+    font-size: 18px;
+    padding: 50px;
+    opacity: 0.6;
 }

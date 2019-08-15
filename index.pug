@@ -1,3 +1,9 @@
+//- 標題(英文, 中文)
+mixin title(eng, ch)
+    h1(class="title")=eng
+    h2=ch
+    img(src="imgs/line.png", alt="線條")
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -12,3 +18,7 @@ html(lang="zh")
                     a(href="#") 最新消息
                     a(href="#") 產品介紹
                     a(href="#") 聯絡我們
+        section(id="brands")
+            +title("BRANDS", "狸小路的堅持")
+            p 不加多餘的糖份、油脂，不給不必要的色素裝飾，只有單純原味，與健康分享，不靠防腐香精來增加香氣與保存期限，使甜膩少一點、但保存短一點，讓你吃的無負擔，追求健康多一點。
+            img(src="imgs/brands.png", alt="狸小路 產品")                        
