@@ -134,10 +134,15 @@ body {
     margin: 70px 0;
 }
 /* 最新消息 */
+#news h3 {
+    font-size: 24px;
+}
 #news p {
     width: 50%;
     margin: 0 auto;
     text-align: left;
+    font-size: 20px;
+    opacity: 0.6;
 } 
 /* footer */
 footer {
