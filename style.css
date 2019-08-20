@@ -6,7 +6,7 @@
     color: #58451A;
     font-family: 微軟正黑體;
     text-align: center;
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    border: 1px solid rgba(209, 127, 127, 0.5);
 }
 h3 {
     color: #fbae1a;
@@ -22,30 +22,31 @@ body {
     width: 100vw;
     height: calc(100vw/2.1);
 }
-#logo {
+.logo {
     width: 300px;
     float: left;
 }
-#link {
+.link {
     float: right;
     padding: 40px 0;
 }
-#link a {
+.link a {
     color: #fff;
     padding: 5px 15px;
     font-weight: 400;
     letter-spacing: 3px;
 }
-#link a:hover {
+.link a:hover {
     background-color: #ffe048;
     color: #000000;
     transition: 0.6s;
 }
 /* 導覽獵區塊 */
-nav {
+#banner nav {
     width: 80%;
     margin: 0 auto;
     padding: 50px 0;
+    height: 50px;
 }
 /* brands 區塊 */
 #brands {
@@ -113,8 +114,8 @@ nav {
 /* 大的按鈕 */
 .btn-big {
     display: inline-block;
-    padding: 10px 100px;
-    margin: 10px;;
+    padding: 15px 100px;
+    margin-top: 30px;
     background-color: #642200;
     color: #fff;
     border: 1px solid #642200;
@@ -124,4 +125,33 @@ nav {
     color: #642200;
     border: 1px solid #642200;
     font-weight: 900;
+}
+/* 裝飾線條-由一張圖重複組成 */
+.line {
+    background-image: url(imgs/small-line.png);
+    height: 2px;
+    background-repeat: repeat-x;
+    margin: 70px 0;
+}
+/* 最新消息 */
+#news p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+} 
+/* footer */
+footer {
+    background-color: #642200;
+}
+footer nav {
+    height: 100px;
+    padding: 20px 10px;
+}
+footer a {
+    margin: 0 20px;
+}
+footer #copy {
+    color: #fff;
+    font-size: 0.5em;
+    padding-bottom: 20px;
 }
