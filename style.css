@@ -8,6 +8,10 @@
     text-align: center;
     /* border: 1px solid rgba(0, 0, 0, 0.5); */
 }
+h3 {
+    color: #fbae1a;
+    font-size: 20px;
+}
 body {
     background-color:  #FAF7F0;
 }
@@ -20,6 +24,7 @@ body {
 }
 #logo {
     width: 300px;
+    float: left;
 }
 #link {
     float: right;
@@ -78,3 +83,45 @@ nav {
     opacity: 0.6;
 }
 /* cakes 產品區塊 */
+#cakes {
+    /* 顯示模式:格線 */
+    display: grid;
+    /* 格線-框架-欄位:欄位尺寸 欄位尺寸...可多個 */
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 870px;
+}
+.cakes-box img {
+    width: 100%;
+}
+.cakes-box h3 {
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+.cakes-box p {
+    text-align: left;
+    opacity: 0.6;
+}
+.cakes-box hr {
+    color: #58451A;;
+    opacity: 0.3;
+}
+/* 大的按鈕 */
+.btn-big {
+    display: inline-block;
+    padding: 10px 100px;
+    margin: 10px;;
+    background-color: #642200;
+    color: #fff;
+    border: 1px solid #642200;
+}
+.btn-big:hover {
+    background-color: transparent;
+    color: #642200;
+    border: 1px solid #642200;
+    font-weight: 900;
+}
