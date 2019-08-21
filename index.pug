@@ -5,15 +5,24 @@ mixin title(eng, ch)
         h1=ch
         img(src="imgs/line.png", alt="線條")
 
-//- 產生 產品區塊 ()
+//- 產生 產品區塊 (圖片, 標題, 內文)
 mixin cakes(img, til, text)
     div(class="cakes-box")
         a(href="#")
-            img(src="imgs/"+img+".png", alt="香蕉巧克力蛋糕")
+            img(src="imgs/"+img+".png", alt="蛋糕")
             hr
             h3=til
             p=text
 
+//- 產生 聯絡我們區塊 (icon, 標題, 電話, 地址, 營業時間)
+mixin contact(icon, til, tel, add, time)
+    div
+        img(src="imgs/"+icon+".png", alt="icon")
+        h3=til
+        ul 
+            li=tel
+            li=add
+            li=time
 
 <!DOCTYPE html>
 html(lang="zh")
@@ -46,18 +55,33 @@ html(lang="zh")
             //- +cakes("", "", "")
         a(href="#" class="btn-big") 觀看產品目錄
         div(class="line")
+        
         +title("NEWS", "最新消息")
         section(id="news")
             a(href="#")
                 h3 官方網站正式上線!
                     p 小路官方網站可以讓您瀏覽小路的所有蛋糕品項，您也可以線上詢問小路有關蛋糕的問題！<br>此官方網站不提供蛋糕的訂購喔！有需要訂購蛋糕的話您可以從小路的粉絲專業上私訊小路或是直接撥打門市電話訂購~<br>裕學門市電話：06-2909702<br>民族門市電話：06-2225374<br>小路客服專線：06-2430890<br><br>2017/03/01
-        section(id="")  
-            +title("CONTACT", "聯絡我們")
-        footer
-            nav
-                img(src="imgs/Logo.png", alt="狸小路 logo" class="logo")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 聯絡我們
-            div(id="copy") Copyright&copy;2019 狸小路 All rights reserved.
+            img(src="imgs/news-pic.jpg", alt="news-pic")
+        a(href="#" class="btn-big") 觀看更多消息
+        div(class="line")
+        
+        +title("CONTACT", "聯絡我們")
+        section(id="contact")
+            div
+                img(src="imgs/icon01.png", alt="icon")
+                h3 預訂客服
+                ul 
+                    li Tel：06-2430890
+                    li ( 現貨也可以預訂 客服到六點唷 )
+            +contact("icon02", "裕學店", "Tel：06-2909702 ( 當日現貨預訂 )", "Adds：台南市東區裕學路12號", "營業時間：早上10點-晚上9點")
+            +contact("icon02", "民族店", "Tel：06-2225374 ( 當日現貨預訂 )", "Adds：台南市中西區民族路二段72-1號", "營業時間：早上10點-晚上9點")
+
+
+    footer
+        nav
+            img(src="imgs/Logo.png", alt="狸小路 logo" class="logo")
+            div(class="link")
+                a(href="#") 最新消息
+                a(href="#") 產品介紹
+                a(href="#") 聯絡我們
+        div(id="copy") Copyright&copy;2019 狸小路 All rights reserved.
