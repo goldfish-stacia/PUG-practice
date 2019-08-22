@@ -32,13 +32,7 @@ html(lang="zh")
         link(rel="stylesheet", href="style.css")
         link(rel="shortcut icon", href="imgs/icon.png", type="image/x-icon")
     body
-        div(id="banner")
-            nav
-                img(src="imgs/Logo.png", alt="狸小路 logo" class="logo")
-                div(class="link")
-                    a(href="#") 最新消息
-                    a(href="#") 產品介紹
-                    a(href="#") 聯絡我們
+        include nav.pug
         section(id="brands")
             +title("BRANDS", "狸小路的堅持")
             p 不加多餘的糖份、油脂，不給不必要的色素裝飾，只有單純原味，與健康分享，不靠防腐香精來增加香氣與保存期限，使甜膩少一點、但保存短一點，讓你吃的無負擔，追求健康多一點。
@@ -76,12 +70,4 @@ html(lang="zh")
             +contact("icon02", "裕學店", "Tel：06-2909702 ( 當日現貨預訂 )", "Adds：台南市東區裕學路12號", "營業時間：早上10點-晚上9點")
             +contact("icon02", "民族店", "Tel：06-2225374 ( 當日現貨預訂 )", "Adds：台南市中西區民族路二段72-1號", "營業時間：早上10點-晚上9點")
 
-
-    footer
-        nav
-            img(src="imgs/Logo.png", alt="狸小路 logo" class="logo")
-            div(class="link")
-                a(href="#") 最新消息
-                a(href="#") 產品介紹
-                a(href="#") 聯絡我們
-        div(id="copy") Copyright&copy;2019 狸小路 All rights reserved.
+    include footer.pug

@@ -167,11 +167,10 @@ body {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-gap: 30px;
-    width: 1200px;
-    padding-right: 0px;
-    margin: 0 auto;
+    width: 80%;
+    margin: 50px auto;
 }
-#contact >div {
+#contact div {
     text-align: center;
 }
 #contact ul {
